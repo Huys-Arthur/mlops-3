@@ -10,6 +10,13 @@ on:
   workflow_dispatch:
     branches:
     - 'main'
+
+  # Github does not allow automatic workflow triggering from other workflows to avoid recursive workflow triggering.
+  # To ensure that our unittest_output also runs when new outputs are pushed from the pipeline workflow, we need to add the code below.
+  workflow_run:
+    workflows: ["run-pipeline"]
+    types:
+      - completed
       
 jobs:
   output_test:
