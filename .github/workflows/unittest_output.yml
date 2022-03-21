@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'models/trained_model.pkl'
+      - 'models/**.pkl'
   workflow_dispatch:
     branches:
     - 'main'
