@@ -21,6 +21,7 @@ jobs:
       - name: create_output_data
         run: |
           pip install pandas
+          pip install sklearn
           python inference.py
       
       - name: output_test
