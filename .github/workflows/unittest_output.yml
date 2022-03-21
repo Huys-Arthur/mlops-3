@@ -17,6 +17,12 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+
+      - name: create_output_data
+        run: |
+          pip install pandas
+          pip install pickle
+          python inference.py
       
       - name: output_test
         uses: ./.github/actions/unittest_output
