@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'data/raw/**.csv'
+      - 'data/output/final_predictions.csv'
   workflow_dispatch:
     branches:
     - 'main'
