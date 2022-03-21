@@ -6,7 +6,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'data/output/final_predictions.csv'
+      - 'models/**.pkl'
   workflow_dispatch:
     branches:
     - 'main'
