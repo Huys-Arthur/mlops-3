@@ -6,7 +6,7 @@ def unittest_output(df: pd.DataFrame):
 
 def main():
     # Read data
-    predictions = pd.read_csv('/data/output/final_predictions.csv')
+    predictions = pd.read_csv('data/output/final_predictions.csv')
 
     # Test data
     unittest_output(predictions)
